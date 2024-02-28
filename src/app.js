@@ -19,12 +19,20 @@ window.onload = function() {
       "when I went for a walk"
     ];
 
-    let w = Math.floor(Math.random() * who.length);
-    let x = Math.floor(Math.random() * action.length);
-    let y = Math.floor(Math.random() * what.length);
-    let z = Math.floor(Math.random() * when.length);
+    let whoChoice = Math.floor(Math.random() * who.length);
+    let actionChoice = Math.floor(Math.random() * action.length);
+    let whatChoice = Math.floor(Math.random() * what.length);
+    let WhenChoice = Math.floor(Math.random() * when.length);
 
-    return who[w] + " " + action[x] + " " + what[y] + " " + when[z];
+    return (
+      who[whoChoice] +
+      " " +
+      action[actionChoice] +
+      " " +
+      what[whatChoice] +
+      " " +
+      when[WhenChoice]
+    );
   };
 
   console.log("Hello Rigo from the console!");
